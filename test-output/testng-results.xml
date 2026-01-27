@@ -1,45 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-23T09:50:29 GMT" name="Suite" finished-at="2026-01-23T09:51:09 GMT" duration-ms="39446">
+  <suite started-at="2026-01-27T10:57:02 GMT" name="Default suite" finished-at="2026-01-27T10:57:14 GMT" duration-ms="11235">
     <groups>
     </groups>
-    <test started-at="2026-01-23T09:50:29 GMT" name="Test" finished-at="2026-01-23T09:51:09 GMT" duration-ms="39446">
-      <class name="TestNG_Package.TC_PT2">
-        <test-method signature="test5()[pri:0, instance:TestNG_Package.TC_PT2@51399530]" started-at="2026-01-23T09:50:29 GMT" name="test5" finished-at="2026-01-23T09:50:56 GMT" duration-ms="26584" status="FAIL">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
+    <test started-at="2026-01-27T10:57:02 GMT" name="Default test" finished-at="2026-01-27T10:57:14 GMT" duration-ms="11235">
+      <class name="SeleniumPack.TC_TestNG2_XML">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:SeleniumPack.TC_TestNG2_XML@2aceadd4]" started-at="2026-01-27T10:57:02 GMT" name="beforeSuite" finished-at="2026-01-27T10:57:02 GMT" duration-ms="24" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:SeleniumPack.TC_TestNG2_XML@2aceadd4]" started-at="2026-01-27T10:57:02 GMT" name="beforeTest" finished-at="2026-01-27T10:57:02 GMT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:SeleniumPack.TC_TestNG2_XML@2aceadd4]" started-at="2026-01-27T10:57:02 GMT" name="beforeClass" finished-at="2026-01-27T10:57:02 GMT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:SeleniumPack.TC_TestNG2_XML@2aceadd4]" started-at="2026-01-27T10:57:03 GMT" name="beforeMethod" finished-at="2026-01-27T10:57:13 GMT" duration-ms="10314" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="f(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:SeleniumPack.TC_TestNG2_XML@2aceadd4]" started-at="2026-01-27T10:57:13 GMT" name="f" data-provider="dp" finished-at="2026-01-27T10:57:13 GMT" duration-ms="10" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://tutorialsninja.com/demo/index.php?
+]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[
+Admin
+]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[
+admin123
+]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.Error">
             <message>
-              <![CDATA[Could not start a new session. Response code 500. Message: Process unexpectedly closed with status 0 
-Host info: host: 'LP-TZ-0X45726', ip: '172.19.200.59'
-Build info: version: '4.39.0', revision: '126f156aee'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:firefoxOptions: {prefs: {remote.active-protocols: 1}}}]}]]]>
+              <![CDATA[Unresolved compilation problem: 
+The method dashboardisplayed() is undefined for the type Login_POM
+]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Process unexpectedly closed with status 0 
-Host info: host: 'LP-TZ-0X45726', ip: '172.19.200.59'
-Build info: version: '4.39.0', revision: '126f156aee'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:firefoxOptions: {prefs: {remote.active-protocols: 1}}}]}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:250)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:178)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:137)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:132)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:114)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:109)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:94)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:84)
-at TestNG_Package.TC_PT2.test5(TC_PT2.java:21)
+              <![CDATA[java.lang.Error: Unresolved compilation problem: 
+The method dashboardisplayed() is undefined for the type Login_POM
+
+at SeleniumPack.TC_TestNG2_XML.f(TC_TestNG2_XML.java:63)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -52,78 +69,45 @@ at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInv
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          </exception> <!-- java.lang.Error -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test5 -->
-      </class> <!-- TestNG_Package.TC_PT2 -->
-      <class name="TestNG_Package.ParallelTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:TestNG_Package.ParallelTest@175c2241]" started-at="2026-01-23T09:50:29 GMT" name="setup" finished-at="2026-01-23T09:50:52 GMT" duration-ms="22383" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- f -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:SeleniumPack.TC_TestNG2_XML@2aceadd4]" started-at="2026-01-27T10:57:13 GMT" name="afterMethod" finished-at="2026-01-27T10:57:14 GMT" duration-ms="784" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:TestNG_Package.ParallelTest@175c2241]" started-at="2026-01-23T09:50:29 GMT" name="setup" finished-at="2026-01-23T09:50:52 GMT" duration-ms="22398" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:SeleniumPack.TC_TestNG2_XML@2aceadd4]" started-at="2026-01-27T10:57:14 GMT" name="afterClass" finished-at="2026-01-27T10:57:14 GMT" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:TestNG_Package.ParallelTest@175c2241]" started-at="2026-01-23T09:50:29 GMT" name="setup" finished-at="2026-01-23T09:50:52 GMT" duration-ms="22418" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:SeleniumPack.TC_TestNG2_XML@2aceadd4]" started-at="2026-01-27T10:57:14 GMT" name="afterTest" finished-at="2026-01-27T10:57:14 GMT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="test3()[pri:0, instance:TestNG_Package.ParallelTest@175c2241]" started-at="2026-01-23T09:50:52 GMT" name="test3" finished-at="2026-01-23T09:51:05 GMT" duration-ms="13696" status="PASS">
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:SeleniumPack.TC_TestNG2_XML@2aceadd4]" started-at="2026-01-27T10:57:14 GMT" name="afterSuite" finished-at="2026-01-27T10:57:14 GMT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test3 -->
-        <test-method signature="test2()[pri:0, instance:TestNG_Package.ParallelTest@175c2241]" started-at="2026-01-23T09:50:52 GMT" name="test2" finished-at="2026-01-23T09:51:09 GMT" duration-ms="16929" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test2 -->
-        <test-method signature="test1()[pri:0, instance:TestNG_Package.ParallelTest@175c2241]" started-at="2026-01-23T09:50:52 GMT" name="test1" finished-at="2026-01-23T09:50:59 GMT" duration-ms="7446" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:TestNG_Package.ParallelTest@175c2241]" started-at="2026-01-23T09:50:59 GMT" name="teardown" finished-at="2026-01-23T09:51:05 GMT" duration-ms="5404" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:TestNG_Package.ParallelTest@175c2241]" started-at="2026-01-23T09:51:05 GMT" name="teardown" finished-at="2026-01-23T09:51:05 GMT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:TestNG_Package.ParallelTest@175c2241]" started-at="2026-01-23T09:51:09 GMT" name="teardown" finished-at="2026-01-23T09:51:09 GMT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- TestNG_Package.ParallelTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- afterSuite -->
+      </class> <!-- SeleniumPack.TC_TestNG2_XML -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

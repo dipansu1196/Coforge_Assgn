@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="4" parallel="methods" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="4" parallel="methods" name="Test(failed)">
-    <parameter name="browser" value="chrome"/>
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestNG_Package.TC_PT2">
+      <class name="SeleniumPack.TC_TestNG2_XML">
         <methods>
-          <include name="test5"/>
+          <include name="beforeSuite"/>
+          <include name="afterClass"/>
+          <include name="f" invocation-numbers="0"/>
+          <include name="afterSuite"/>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+          <include name="beforeClass"/>
+          <include name="afterTest"/>
+          <include name="beforeMethod"/>
         </methods>
-      </class> <!-- TestNG_Package.TC_PT2 -->
+      </class> <!-- SeleniumPack.TC_TestNG2_XML -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
