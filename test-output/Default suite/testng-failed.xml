@@ -3,19 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="SeleniumPack.TC_TestNG2_XML">
+      <class name="com.orhrm.tests.AddtoCart_Test">
         <methods>
-          <include name="beforeSuite"/>
-          <include name="afterClass"/>
-          <include name="f" invocation-numbers="0"/>
-          <include name="afterSuite"/>
-          <include name="afterMethod"/>
-          <include name="beforeTest"/>
-          <include name="beforeClass"/>
-          <include name="afterTest"/>
-          <include name="beforeMethod"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="t7"/>
         </methods>
-      </class> <!-- SeleniumPack.TC_TestNG2_XML -->
+      </class> <!-- com.orhrm.tests.AddtoCart_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

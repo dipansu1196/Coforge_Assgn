@@ -45,7 +45,7 @@ public class TC_TestNG2_XML {
 	
 	String projectpath=System.getProperty("user.dir");
   @Test(dataProvider = "dp")
-  public void f(String url,String username, String password) {
+  public void f(String url,String username, String password) throws InterruptedException {
 	  
 	  System.out.println("This is test");
 	  Login_POM obj=new Login_POM(driver);
@@ -60,7 +60,8 @@ public class TC_TestNG2_XML {
 	  		obj.enterusername(username);
 	  		obj.enterpassword(password);
 	  		obj.clickonsubmit();
-	  		boolean dashboard=obj.dashboardisplayed();
+	  		Thread.sleep(5000);
+	  		boolean dashboard=obj.dashboarddisplayed();
 	  		
 	  		
 			if(dashboard==true)
