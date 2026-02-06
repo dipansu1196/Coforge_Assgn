@@ -11,7 +11,7 @@ public class TC_Pacexample {
 		
 		
 	TC002 obj = new TC002();
-	System.out.println("number from cs:" +obj.num);
+	
 		
 		
 		

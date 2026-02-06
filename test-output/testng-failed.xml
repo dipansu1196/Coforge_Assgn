@@ -3,15 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.orhrm.tests.LoginTest_Aut">
+      <class name="SeleniumPack.NewTest">
         <methods>
-          <include name="tC1"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="startReport"/>
-          <include name="endReport"/>
+          <include name="f"/>
         </methods>
-      </class> <!-- com.orhrm.tests.LoginTest_Aut -->
+      </class> <!-- SeleniumPack.NewTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

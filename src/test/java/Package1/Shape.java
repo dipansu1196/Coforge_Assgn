@@ -1,5 +1,6 @@
 package Package1;
 
+/*
 interface Shape {
     double area();
 }
@@ -50,4 +51,4 @@ public class OverrideAnnotationDemo {
         Animal a = new Dog();
         a.sound();
     }
-}
+}*/

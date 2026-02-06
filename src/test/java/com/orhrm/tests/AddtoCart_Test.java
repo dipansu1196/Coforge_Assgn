@@ -104,9 +104,7 @@ public class AddtoCart_Test {
 
   
 
-    // Optional: screenshot on success at end (uncomment if you want)
-    // String endShot = takeScreenshot("t7_end");
-    // test.pass("End screenshot").addScreenCaptureFromPath(endShot);
+    
   }
 
   @AfterMethod

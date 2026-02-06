@@ -1,5 +1,5 @@
 
-package Package1;
+/*
 
 public class Lab_2_5 {
 
@@ -96,3 +96,5 @@ public class Lab_2_5 {
         Account acc = new SavingsAccount(1234567890123L, holder, 400);
         System.out.println("Opening balance: " + acc.getBalance());
         acc.deposit(800);
+}
+}*/
